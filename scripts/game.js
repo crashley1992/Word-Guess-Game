@@ -26,15 +26,27 @@ var letter = event.key.toString();
             answerArray[i] = letter;
             remainingLetters--;
             document.getElementById("letter1").innerHTML = answerArray;
+    
             //ends guessing once all letters have been guesses. 
             if(remainingLetters === 0) {
                 console.log("winner");
-            }
+                var winner = 0;
+                 winner = winner + 1;
+                 document.getElementById("win-tracker").innerHTML = winner;
+                }
          } else {
             console.log("wrong");
             }
        }    
+       
    }
  
+//guess tracker
+   document.addEventListener("keyup", function(){
+        var guess = 0;
+        guess++;
+        console.log(guess);
+        document.getElementById("guess-tracker").innerHTML = guess;
+});
 
     
