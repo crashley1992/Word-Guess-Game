@@ -1,0 +1,10 @@
+.rule-box {
+    text-align: center;
+    border: solid black 2px;
+}
+
+.game-content {
+    display: inline-block;
+    color: blue;
+    font-size: 35px;
+}
