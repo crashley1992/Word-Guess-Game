@@ -16,6 +16,7 @@ var word = words[Math.floor(Math.random() * words.length)];
 
 //stores random word into another array for displaing length for guesser
 var answerArray = [];
+
 for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_";
 }
@@ -37,7 +38,12 @@ var letter = event.key.toString();
             answerArray[i] = letter;
             remainingLetters--;
             document.getElementById("letter1").innerHTML = answerArray;
-    
+            //Word guessed correctly counter
+
+            var correct = 0;
+            correct++;
+            document.getElementById("letters-correct").innerHTML = correct;
+
             //ends guessing once all letters have been guesses. 
             if(remainingLetters === 0) {
                 console.log("winner");
@@ -59,6 +65,10 @@ var guess = 0;
         guess++;
         console.log(guess);
         document.getElementById("guess-tracker").innerHTML = guess;
+        //remaining guess counter 
+        var remaining = 20 - guess;
+        document.getElementById("guess-remaining").innerHTML = remaining;
+        //end game conditional
         if (guess > 20) {
             console.log("you lose"); //display Game over box
         }
@@ -67,7 +77,6 @@ var guess = 0;
 
 
   //next queue word for game
-
 
 
   //if words are all used up -- end game
