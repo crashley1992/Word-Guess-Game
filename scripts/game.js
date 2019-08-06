@@ -1,5 +1,16 @@
-//Words to guess from
-var words = ["help", "depression"];
+//var for game status so it doesn't run until user clicks start
+var start = false;
+
+//global function to end game
+function stopGame() {
+    document.location.reload()
+}
+//global function to start game
+  function startGame() {
+    start = true;
+
+    //Words to guess from
+var words = ["help", "depression", "sorrow"];
 //picks random word from array
 var word = words[Math.floor(Math.random() * words.length)];
 
@@ -9,7 +20,7 @@ for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_";
 }
 
-//prints letter to document
+//prints __ symbol to document
 console.log(answerArray);
 document.getElementById("letter1").innerHTML = answerArray;
 
@@ -36,17 +47,28 @@ var letter = event.key.toString();
                 }
          } else {
             console.log("wrong");
+            // guess total - correct guesses
             }
-       }    
-       
+         }     
    }
  
+
+var guess = 0;
 //guess tracker
-   document.addEventListener("keyup", function(){
-        var guess = 0;
+   document.addEventListener("keyup", function(event){
         guess++;
         console.log(guess);
         document.getElementById("guess-tracker").innerHTML = guess;
-});
+        if (guess > 20) {
+            console.log("you lose"); //display Game over box
+        }
+   });
+  }
 
-    
+
+  //next queue word for game
+
+
+
+  //if words are all used up -- end game
+
