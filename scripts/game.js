@@ -14,7 +14,7 @@ function stopGame() {
     start = true;
 
     //Words to guess from
-var words = ["help", "sad", "sorrow"];
+var words = ["finn", "jake", "bmo", "marcaline"];
 //picks random word from array
 var word = words[Math.floor(Math.random() * words.length)];
 
@@ -52,8 +52,7 @@ var letter = event.key.toString();
                  winner++;
                  //Ends Game when win counter hits 3.
                  if(winner == 3) {
-                    console.log("You Won!")
-                    //write function that ends Game
+                    document.getElementById("win-game").innerHTML = "You Won!";                    //write function that ends Game
                  }
                  document.getElementById("win-tracker").innerHTML = winner;
                 
@@ -69,10 +68,10 @@ var letter = event.key.toString();
         console.log(guess);
         document.getElementById("guess-tracker").innerHTML = guess;
         //remaining guess counter 
-        var remaining = 26 - guess;// at 26 because it makes up for enter button
+        var remaining = 40 - guess;// at 30 for longer word
         document.getElementById("guess-remaining").innerHTML = remaining;
         //end game conditional
-        if (guess > 26) {
+        if (guess > 40 ) {
             document.getElementById("game-over").innerHTML = "Game Over"; //display Game over box
         }
    });

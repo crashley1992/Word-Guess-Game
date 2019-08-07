@@ -44,12 +44,18 @@ body {
 
 .guess-display > p {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 4%;
     text-align: center;
 }
-
-#win-tracker {
-    color: green !important;
+/*Game over display*/
+#game-over {
+    background: black;
+    color: red;
+    font-size: 45px;
 }
-
-
+/*Game Win display*/
+#win-game {
+    background: #8EFFAF;
+    color: red;
+    font-size: 45px;
+}

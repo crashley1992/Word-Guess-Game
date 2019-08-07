@@ -49,14 +49,19 @@
             <!--Word display-->
                 <div class="game-content">
                         <p id="letter1"></p>
+                        <!--Game Over display when guesses are 0-->
+                        <span id="game-over"></span>
+                        <!--Won Game display when win = 3-->
+                        <span id="win-game"></span>
                 </div>
             <!--Guess, wins, remaining totals-->
-        <p>Guesses Total: <span id="guess-tracker"></span> </p>
+        <p>Guesses Total: <span id="guess-tracker"></span></p>
         <p>Remaining Guesses: <span id="guess-remaining"></span></p>
-        <p>Letters guessed correctly:<span id="letters-correct"></span> </p>
-        <p>Win Total:<span id="win-tracker"></span> </p>
-        <span id="game-over"></span>
+        <p>Letters guessed correctly: <span id="letters-correct"></span></p>
+        <p>Win Total: <span id="win-tracker"></span></p>
     </div>
+
+    
 
     
     <script src="../Word-Guess-Game/scripts/game.js"></script>
