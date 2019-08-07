@@ -52,6 +52,7 @@ function startGame() {
           winner++;
           //Ends Game when win counter hits 3.
           if (winner == 3) {
+            winAudio.play();
             document.getElementById("win-game").innerHTML = "You Won!"; //write function that ends Game
           }
           document.getElementById("win-tracker").innerHTML = winner;
@@ -72,6 +73,7 @@ function startGame() {
     document.getElementById("guess-remaining").innerHTML = remaining;
     //end game conditional
     if (guess > 40) {
+      lostAudio.play();
       document.getElementById("game-over").innerHTML = "Game Over"; //display Game over box
     }
   });
@@ -121,6 +123,7 @@ function nextGame() {
           winner++;
           //Ends Game when win counter hits 3.
           if (winner == 3) {
+            winAudio.play();
             document.getElementById("win-game").innerHTML = "You Won!"; //write function that ends Game
           }
           document.getElementById("win-tracker").innerHTML = winner;
@@ -130,3 +133,12 @@ function nextGame() {
     }
   }
 }
+
+//sound effects
+//when losing game lemongrab yells
+var lostAudio = new Audio('../Word-Guess-Game/mp3/lemon-grab-unacceptable.mp3');
+lostAudio.play();
+
+//win audio
+var winAudio = new Audio('../Word-Guess-Game/mp3/beautiful-lemongrab.mp3');
+winAudio.play();

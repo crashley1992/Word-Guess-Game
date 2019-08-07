@@ -9,11 +9,11 @@ body {
 }
 
 .characters {
-  width: 100%;
-  height: 400px;
+  width: 60%;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
-  border: solid black 1px;
+  border: solid black 2px;
 }
 
 /*styling for game rules and title*/
@@ -21,6 +21,9 @@ body {
   text-align: center;
   border: solid black 2px;
   background-color: white;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Word display*/
@@ -42,6 +45,9 @@ body {
   border: solid black 2px;
   padding-left: 5%;
   background-color: white;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .guess-display>p {
