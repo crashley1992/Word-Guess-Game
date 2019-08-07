@@ -8,7 +8,7 @@ Game Theme: Adventure Time
 
 The program does the following:
 1. Selects a character at random.
-2. Displays character with they letters displayed as "_" until the correct letter has been guessed.
+2. Displays character with the letters displayed as "_" until the correct letter has been guessed.
 3. Tracks the guesses that are correct, remaining guesses, total guesses, and total wins.
 4. Will display new word if "Next Word" button was selected. 
 5. Game will continue until the player guesses 3 words correctly, uses up all 40 guesses, or player hits stop game button.
