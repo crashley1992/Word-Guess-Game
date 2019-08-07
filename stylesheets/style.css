@@ -1,10 +1,55 @@
+body {
+    font-family: 'Grenze', serif !important;
+    background-color: #8EFFAF !important;
+}
+
+/*Character Image at the top of page*/
+.image {
+    margin-top: 0%;
+}
+
+.characters {
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 1px;
+}
+/*styling for game rules and title*/
 .rule-box {
     text-align: center;
     border: solid black 2px;
+    background-color: white;
+}
+/*Word display*/
+.game-content {
+    color: black;
+    font-size: 35px;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+/*Button start game etc styling*/
+#start-game {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+
 }
 
-.game-content {
-    display: inline-block;
-    color: blue;
-    font-size: 35px;
+.guess-display {
+    border: solid black 2px;
+    padding-left: 5%;
+    background-color: white;
 }
+
+.guess-display > p {
+    display: inline-block;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#win-tracker {
+    color: green !important;
+}
+
+
