@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Word Guess Game</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../Word-Guess-Game/stylesheets/style.css">
-<!--Google Fonts-->
-<link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
-<!--BootStrap CSS CDN-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--Bootstrap Javascript CDN-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Word Guess Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Word-Guess-Game/stylesheets/style.css">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+  <!--BootStrap CSS CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Bootstrap Javascript CDN-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
 
-        <div class="image">
-            <div class="container-fluid">
-                <div class="row">
-                    <img class="characters" src="https://media.wired.com/photos/5932661626780e6c04d2b642/master/pass/AdventureTime.jpg" alt="adventure time characters">
-                </div>
-            </div>
-        </div>
-
-<!--display for rules-->
-    <div class="rule-box">
-        <div class="container">
-            <h1>Adventure Time Guessing Game</h1>
-            <p>Rules:</p>
-            <p>Guess what Adventure Time Character we're thinking of.</p>
-            <p>After guessing a character correctly click the "Next Word" button</p>
-            <p>You'll have a total of 26 guesses.</p>
-            <p>To Win guess a total of 3 characters.</p>
-        </div>
+  <div class="image">
+    <div class="container-fluid">
+      <div class="row">
+        <img class="characters" src="https://media.wired.com/photos/5932661626780e6c04d2b642/master/pass/AdventureTime.jpg" alt="adventure time characters">
+      </div>
     </div>
-</div>
-<!--Word display-->
-<div id="start-game">
+  </div>
+
+  <!--display for rules-->
+  <div class="rule-box">
+    <div class="container">
+      <h1>Adventure Time Guessing Game</h1>
+      <p>Rules:</p>
+      <p>Guess what Adventure Time Character we're thinking of.</p>
+      <p>After guessing a character correctly, click the "Next Word" button</p>
+      <p>You'll have a total of 40 guesses.</p>
+      <p>To Win guess a total of 3 characters correctly.</p>
+    </div>
+  </div>
+  </div>
+  <!--Word display-->
+  <div id="start-game">
     <button class="btn btn-info" onclick="startGame()">Start Game</button>
     <button class="btn btn-info" onclick="stopGame()">Stop Game</button>
-    <button class="btn btn-info" onclick="startGame()">Next Word</button>
-</div>
-   
+    <button class="btn btn-info" onclick="nextGame()">Next Word</button>
+  </div>
 
-        <div class="guess-display">
-            <!--Word display-->
-                <div class="game-content">
-                        <p id="letter1"></p>
-                        <!--Game Over display when guesses are 0-->
-                        <span id="game-over"></span>
-                        <!--Won Game display when win = 3-->
-                        <span id="win-game"></span>
-                </div>
-            <!--Guess, wins, remaining totals-->
-        <p>Guesses Total: <span id="guess-tracker"></span></p>
-        <p>Remaining Guesses: <span id="guess-remaining"></span></p>
-        <p>Letters guessed correctly: <span id="letters-correct"></span></p>
-        <p>Win Total: <span id="win-tracker"></span></p>
+
+  <div class="guess-display">
+    <!--Word display-->
+    <div class="game-content">
+      <p id="letter1"></p>
+      <!--Game Over display when guesses are 0-->
+      <span id="game-over"></span>
+      <!--Won Game display when win = 3-->
+      <span id="win-game"></span>
     </div>
+    <!--Guess, wins, remaining totals-->
+    <p>Guesses Total: <span id="guess-tracker"></span></p>
+    <p>Remaining Guesses: <span id="guess-remaining"></span></p>
+    <p>Letters guessed correctly: <span id="letters-correct"></span></p>
+    <p>Win Total: <span id="win-tracker"></span></p>
+  </div>
 
-    
-
-    
-    <script src="../Word-Guess-Game/scripts/game.js"></script>
+  <script src="../Word-Guess-Game/scripts/game.js"></script>
 </body>
-
-
 
 
 

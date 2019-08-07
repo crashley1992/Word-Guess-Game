@@ -1,61 +1,65 @@
 body {
-    font-family: 'Grenze', serif !important;
-    background-color: #8EFFAF !important;
+  font-family: 'Grenze', serif !important;
+  background-color: #8EFFAF !important;
 }
 
 /*Character Image at the top of page*/
 .image {
-    margin-top: 0%;
+  margin-top: 0%;
 }
 
 .characters {
-    width: 100%;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid black 1px;
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 1px;
 }
+
 /*styling for game rules and title*/
 .rule-box {
-    text-align: center;
-    border: solid black 2px;
-    background-color: white;
+  text-align: center;
+  border: solid black 2px;
+  background-color: white;
 }
+
 /*Word display*/
 .game-content {
-    color: black;
-    font-size: 35px;
-    margin-left: 40%;
-    margin-top: 1%;
+  color: black;
+  font-size: 35px;
+  margin-left: 40%;
+  margin-top: 1%;
 }
+
 /*Button start game etc styling*/
 #start-game {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: center;
-
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
 }
 
 .guess-display {
-    border: solid black 2px;
-    padding-left: 5%;
-    background-color: white;
+  border: solid black 2px;
+  padding-left: 5%;
+  background-color: white;
 }
 
-.guess-display > p {
-    display: inline-block;
-    margin-left: 4%;
-    text-align: center;
+.guess-display>p {
+  display: inline-block;
+  margin-left: 4%;
+  text-align: center;
 }
+
 /*Game over display*/
 #game-over {
-    background: black;
-    color: red;
-    font-size: 45px;
+  background: black;
+  color: red;
+  font-size: 45px;
 }
+
 /*Game Win display*/
 #win-game {
-    background: #8EFFAF;
-    color: red;
-    font-size: 45px;
+  background: #8EFFAF;
+  color: red;
+  font-size: 45px;
 }
