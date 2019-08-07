@@ -15,5 +15,12 @@ The program does the following:
 6. If user Wins the game "You Win" will be displayed and Lemongrab's mp3 audio will say "Beautiful".
 7. If user Loses the game "Game Over" will be displayed and Lemongrab's mp3 audio will say "Unacceptable".
 8. If "Stop Game" button is selected Lemongrab's mp3 audio will say "Unacceptable" and the page reloads to clear our word and gueses. 
+9. Game will not begin until "Start Game" button has been selected.
+
+Game Rules
+1. Guess what Adventure Time Character the computer selected.
+2. After guessing a character correctly, click the "Next Word" button.
+3. You'll have a total of 40 guesses.
+4. To Win guess a total of 3 characters correctly.
 
 
