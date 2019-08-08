@@ -14,7 +14,7 @@ function startGame() {
   start = true;
 
   //Words to guess from
-  var words = ["finn", "jake", "bmo", "marcaline"];
+  var words = ["finn", "jake", "bmo", "marcaline", "lemongrab"];
   //picks random word from array
   var word = words[Math.floor(Math.random() * words.length)];
 
