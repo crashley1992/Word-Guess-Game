@@ -23,4 +23,5 @@ Game Rules
 3. You'll have a total of 40 guesses.
 4. To Win guess a total of 3 characters correctly.
 
+Link to deployed game:  https://crashley1992.github.io/Word-Guess-Game/
 
