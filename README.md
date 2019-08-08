@@ -4,7 +4,7 @@ The goal is to create a game app where the computer randomly selects a word and 
 Game Theme: Adventure Time
 - The words the computer randomly selects are Adventure Time characters.
 - Character's names are stored in an array and can be adjusted.
-- Possible characters are: "jake", "finn", "marcaline", and "bmo".
+- Possible characters are: "jake", "finn", "marcaline", "bmo", and "lemongrab".
 
 The program does the following:
 1. Selects a character at random.
